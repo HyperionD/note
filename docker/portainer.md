@@ -1,12 +1,6 @@
-
-
 # portainer
 
- 
-
 安装
-
- 
 
 ```
 
@@ -14,11 +8,7 @@ docker pull portainer/portainer
 
 ```
 
- 
-
 启动
-
- 
 
 ```
 

@@ -1,12 +1,6 @@
-
-
 # CentOS6 配置http协议的git服务端
 
- 
-
 1.  安装软件
-
- 
 
 ```
 
@@ -14,11 +8,7 @@
 
 ```
 
- 
-
 2. 创建git裸仓库
-
- 
 
 ```
 
@@ -30,11 +20,7 @@
 
 ```
 
- 
-
 3. 将git仓库文件夹用户更改为apache
-
- 
 
 ```
 
@@ -42,27 +28,17 @@
 
 ```
 
- 
-
 4. 创建git验证账户
-
- 
 
 ```
 
 # htpasswd -m -c /etc/httpd/conf.d/git-team.htpasswd hyperion
 
- 
-
 # 如果第一个账号里有了-c其他账号要去掉-c参数
 
 ```
 
- 
-
 5. 更改git-team.htpasswd文件所有者及权限
-
- 
 
 ```
 
@@ -72,17 +48,11 @@
 
 ```
 
- 
-
 6.  更改/etc/httpd/conf/httpd.conf
-
- 
 
 ```
 
 # 在文件最后加入
-
- 
 
 <VirtualHost *:80>
 
@@ -110,19 +80,10 @@
 
 ```
 
- 
-
 7. 开机启动
-
- 
 
 ```
 
 chkconfig httpd on
 
 ```
-
-
-
-
-

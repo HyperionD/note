@@ -1,12 +1,6 @@
-
-
 # git远程仓库
 
- 
-
 1. 查看远程仓库信息
-
- 
 
 ```
 
@@ -14,11 +8,7 @@ git remote -v
 
 ```
 
- 
-
 2. 添加远程仓库
-
- 
 
 ```
 
@@ -26,11 +16,7 @@ git remote add origin http://192.168.1.186:9090/git/test.git
 
 ```
 
- 
-
 3. 推送本地项目
-
- 
 
 ```
 
@@ -41,8 +27,3 @@ git remote add origin http://192.168.1.186:9090/git/test.git
 git push -u origin master
 
 ```
-
-
-
-
-

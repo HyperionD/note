@@ -1,11 +1,13 @@
 ## 表空间相关
 
 查看表空间物理文件路径
-```- - 
+
+``` 
 SQL> select name from v$datafile;
 ```
 
 创建表空间
+
 ```
 SQL> create tablespace JEECGBOOT datafile '/opt/oracle/app/oradata/orcl/jeecgboot.dbf' size 50M autoextend on next 50M maxsize unlimited;
 ```
@@ -52,4 +54,3 @@ SQL> select * from all_tab_comments;
 ```
 SQL> select * from user_tab_comments;
 ```
-

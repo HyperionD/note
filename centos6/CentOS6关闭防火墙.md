@@ -1,3 +1,4 @@
+# CentOS6 关闭防火墙
 ```bash
 service iptables status
 
